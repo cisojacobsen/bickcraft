@@ -1,0 +1,61 @@
+@import "./normalize.css";
+
+/* Fontes do site */
+@font-face {
+  font-family: "Poppins Regular";
+  src: url("./fontes/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Poppins SemiBold";
+  src: url("./fontes/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("./fontes/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto Medium";
+  src: url("./fontes/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+/* Container */
+.container {
+  max-width: 1160px;
+}
+
+/* Header */
+.header {
+  background: #000000;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  height: 6rem;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu ul li {
+  list-style: none;
+}
+
+.menu ul li a {
+  color: #ffffff;
+  font-family: "Poppins Regular", sans-serif;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  text-decoration: none;
+  padding: 0.5rem 1.25rem;
+}
