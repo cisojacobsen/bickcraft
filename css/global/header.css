@@ -1,5 +1,5 @@
 .header-bg {
-  background: #000000;
+  background: var(--cor-c12);
 }
 
 .header {
@@ -24,9 +24,6 @@
 
 .header-menu li a {
   display: inline-block;
-  color: #ffffff;
-  font-family: "Poppins Regular", sans-serif;
-  font-size: 1.125rem;
   padding: 1rem 0;
   position: relative;
 }
@@ -38,7 +35,7 @@
   width: 0px;
   height: 2px;
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: var(--cor-c0);
   margin-top: 4px;
   transition: width 0.3s;
 }
@@ -65,14 +62,14 @@
   }
 
   .header-menu li a {
-    background: #111111;
+    background: var(--cor-c11);
     padding: 12px 16px;
     border-radius: 4px;
     transition: all 0.5s;
   }
 
   .header-menu li a:hover {
-    background-color: #2e2e2e;
+    background-color: var(--cor-c10);
   }
 
   .header-menu li a::after {

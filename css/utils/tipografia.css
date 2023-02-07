@@ -1,14 +1,123 @@
-.texto-grande {
-  font-family: "Poppins SemiBold";
-  color: #ffffff;
-  font-size: 4rem;
+/*  Cálculo valor do Line-height
+    O valor de line-height é em relação ao font-size;
+    line-height = 72px dividido por font-size = 64px;
+    72px / 64 = 1.125
+*/
+
+/*  Sintaxe resumida
+    font: weight size/line-height "font-family", "font-callback"
+    font: 600 4rem/1.125 "Poppins SemiBold", sans-serif;
+*/
+
+.font-1-xxl {
+  font-family: "Poppins SemiBold", sans-serif;
   font-weight: 600;
-  line-height: 1.265; /* 4.5rem */
+  font-size: 4rem; /* 64px */
+  line-height: 1.125; /* 72px */
 }
 
-.texto-medio {
-  font-family: "Roboto Regular";
-  font-size: 1.5rem;
+.font-1-xl {
+  font-family: "Poppins SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 2rem; /* 32px */
+  line-height: 1.25; /* 40px */
+}
+
+.font-1-l {
+  font-family: "Poppins Regular", sans-serif;
   font-weight: 400;
-  line-height: 1.5; /* 2.25rem */
+  font-size: 1.5rem; /* 24px */
+  line-height: 1.5; /* 36px */
+}
+
+.font-1-m {
+  font-family: "Poppins Regular", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.35; /* 24px */
+}
+
+.font-1-m-b {
+  font-family: "Poppins SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.35; /* 24px */
+}
+
+.font-1-s {
+  font-family: "Poppins Regular", sans-serif;
+  font-weight: 400;
+  font-size: 1rem; /* 16px */
+  line-height: 1.5; /* 24px */
+}
+
+.font-1-xs {
+  font-family: "Poppins SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem; /* 12px */
+  line-height: 1.35; /* 16px */
+}
+
+.font-2-l {
+  font-family: "Roboto Regular", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem; /* 24px */
+  line-height: 1.5; /* 36px */
+}
+
+.font-2-l-b {
+  font-family: "Roboto Medium", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem; /* 24px */
+  line-height: 1.5; /* 36px */
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+}
+
+.font-2-m {
+  font-family: "Roboto Medium", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.35; /* 24px */
+}
+
+.font-2-s {
+  font-family: "Roboto Regular", sans-serif;
+  font-weight: 400;
+  font-size: 1rem; /* 16px */
+  line-height: 1.5; /* 24px */
+}
+
+.font-2-xs {
+  font-family: "Roboto Regular", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.4; /* 20px */
+}
+
+@media (max-width: 1200px) {
+  .font-1-xxl {
+    font-size: 3rem;
+  }
+  .font-2-l,
+  .font-2-l-b {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .font-1-xxl {
+    font-size: 3rem;
+  }
+
+  .font-1-xl,
+  .font-2-xl {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .font-1-xxl {
+    font-size: 2rem;
+  }
 }

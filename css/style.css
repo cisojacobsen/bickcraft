@@ -1,6 +1,7 @@
 /* @import CSS Global */
 @import "./global/global.css";
 @import "./utils/tipografia.css";
+@import "./utils/cores.css";
 @import "./global/header.css";
 
 /* @import CSS Utils */
@@ -8,6 +9,9 @@
 
 /* @import CSS Home */
 @import "./home/introducao.css";
+
+/* @import CSS Bicicletas */
+@import "./bicicletas/bicicletas-lista.css";
 
 /* @import Fonts */
 @font-face {
