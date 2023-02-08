@@ -23,11 +23,7 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 40px;
-  padding: 20px;
-  box-sizing: border-box;
-  max-width: 1200px;
   height: 680px;
-  margin: 0 auto;
 }
 
 .introducao-conteudo h1 {
@@ -41,6 +37,12 @@
 
 .introducao-img img {
   object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .introducao-bg::after {
+    left: 20px;
+  }
 }
 
 @media (max-width: 800px) {

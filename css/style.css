@@ -13,6 +13,9 @@
 /* @import CSS Bicicletas */
 @import "./bicicletas/bicicletas-lista.css";
 
+/* @import CSS Tecnologia */
+@import "./tecnologia/tecnologia.css";
+
 /* @import Fonts */
 @font-face {
   font-family: "Poppins Regular";
