@@ -9,12 +9,11 @@
 
 /* @import CSS Home */
 @import "./home/introducao.css";
+@import "./home/tecnologia.css";
+@import "./home/parceiros.css";
 
 /* @import CSS Bicicletas */
 @import "./bicicletas/bicicletas-lista.css";
-
-/* @import CSS Tecnologia */
-@import "./tecnologia/tecnologia.css";
 
 /* @import Fonts */
 @font-face {
