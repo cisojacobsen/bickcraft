@@ -11,6 +11,7 @@
 @import "./home/introducao.css";
 @import "./home/tecnologia.css";
 @import "./home/parceiros.css";
+@import "./home/depoimento.css";
 
 /* @import CSS Bicicletas */
 @import "./bicicletas/bicicletas-lista.css";
@@ -38,4 +39,10 @@
   font-family: "Roboto Medium";
   src: url("../fontes/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
+}
+
+@font-face {
+  font-family: "Merriweather Black Italic";
+  src: url("../fontes/Merriweather-Black-Italic.ttf") format("truetype");
+  font-weight: 900;
 }

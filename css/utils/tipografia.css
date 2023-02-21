@@ -103,6 +103,14 @@
   line-height: 1.4; /* 20px */
 }
 
+.font-3-xl {
+  font-family: "Merriweather Black Italic";
+  font-style: italic;
+  font-weight: 900;
+  font-size: 2.25rem;
+  line-height: 1.35;
+}
+
 @media (max-width: 1200px) {
   .font-1-xxl {
     font-size: 3rem;
