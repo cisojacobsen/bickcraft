@@ -1,0 +1,78 @@
+.seguros-bg {
+  position: relative;
+  background-color: var(--cor-c11);
+  margin: 0 auto;
+  padding: 60px 0 120px;
+}
+
+.seguros-bg::after {
+  content: "";
+  display: block;
+  background-image: url("/img/dec/bottom-left.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  width: 52px;
+  height: 52px;
+}
+
+.seguros h2 {
+  padding-bottom: 60px;
+}
+
+.seguros .planos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.seguros .planos .plano {
+  background: var(--cor-c12);
+  height: max-content;
+  display: block;
+  padding: 32px 32px 32px 64px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.seguros .planos h3 {
+  text-transform: uppercase;
+  padding-bottom: 32px;
+}
+
+.seguros .planos .valor {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.seguros .planos .beneficios {
+  list-style-image: url("../../img/icones/lista.svg");
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 32px;
+}
+
+.seguros .planos .prata .botao:hover {
+  background: var(--cor-c11);
+}
+
+@media (max-width: 800px) {
+  .seguros .planos {
+    grid-template-columns: 1fr;
+  }
+
+  .seguros .planos .plano {
+    padding: 32px 32px 32px 48px;
+  }
+
+  .seguros h2 {
+    padding-bottom: 30px;
+  }
+}
