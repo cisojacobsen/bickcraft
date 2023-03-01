@@ -3,6 +3,7 @@
 @import "./utils/tipografia.css";
 @import "./utils/cores.css";
 @import "./global/header.css";
+@import "./global/footer.css";
 
 /* @import CSS Utils */
 @import "./utils/componentes.css";
