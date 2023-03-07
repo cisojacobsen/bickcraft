@@ -10,16 +10,28 @@
 .botao {
   display: inline-block;
   font: 600 1.125rem/1.35 "Poppins SemiBold", sans-serif;
+  color: var(--cor-p5);
   text-transform: uppercase;
   text-decoration: none;
+  background: linear-gradient(#ffbf00, #f2a50c);
   padding: 1rem 2rem;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   transition: background 0.5s;
+  max-width: max-content;
 }
 
 .botao:hover {
   background: linear-gradient(#ffb60d, #e59317);
+}
+
+.botao.secundario {
+  background: var(--cor-c10);
+  color: var(--cor-c4);
+}
+
+.botao.secundario:hover {
+  background: var(--cor-c9);
 }
 
 @media (max-width: 800px) {
