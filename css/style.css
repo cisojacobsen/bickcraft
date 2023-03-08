@@ -20,6 +20,9 @@
 /* @import CSS Seguros */
 @import "./seguros/seguros.css";
 
+/* @import CSS Termos */
+@import "./termos/termos.css";
+
 /* @import Fonts */
 @font-face {
   font-family: "Poppins Regular";
