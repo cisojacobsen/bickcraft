@@ -1,0 +1,119 @@
+.bicicletas {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.bicicleta-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.bicicleta-img {
+  position: relative;
+}
+
+.bicicleta-img .preco {
+  position: absolute;
+  background-color: var(--cor-c12);
+  padding: 8px 16px;
+  border-radius: 5px 0 0 5px;
+  top: 20px;
+  right: 0;
+}
+
+.bicicleta-conteudo {
+  position: relative;
+}
+
+.bicicleta-conteudo::before {
+  content: "";
+  display: block;
+  background-image: url("/img/dec/top-right.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 52px;
+  height: 52px;
+}
+
+.bicicleta-conteudo h2::before {
+  content: "";
+  display: block;
+  background: var(--cor-p1);
+  width: 12px;
+  height: 8px;
+  margin-bottom: 8px;
+}
+
+.bicicleta-conteudo h2 {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.bicicleta-conteudo > p {
+  max-width: 45ch;
+  margin-bottom: 32px;
+}
+
+.bicicleta-conteudo .recursos {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.bicicleta-conteudo .recursos li {
+  display: flex;
+  flex-direction: row;
+
+  gap: 8px;
+}
+
+.bicicleta-conteudo .recursos li img {
+  width: 24px;
+  height: 24px;
+}
+
+.bicicleta-conteudo .botao {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.bicicleta-conteudo .botao img {
+  display: inline;
+  margin-left: 16px;
+}
+
+.bicicleta-item:nth-child(2) .bicicleta-conteudo {
+  background-color: var(--cor-c11);
+}
+
+/* .bicicleta-item:nth-child(2) {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  box-shadow: 200px 0 0 60px var(--cor-c11);
+} */
+
+.bicicleta-item:nth-child(2) {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.bicicleta-item:nth-child(2)::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 200px;
+  width: 100%;
+  height: 460px;
+  overflow-x: auto;
+  border-radius: 3px;
+  background-color: var(--cor-c11);
+}
