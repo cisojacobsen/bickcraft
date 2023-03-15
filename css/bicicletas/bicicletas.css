@@ -18,9 +18,10 @@
 
 .bicicleta-img .preco {
   position: absolute;
+  display: inline-block;
   background-color: var(--cor-c12);
   padding: 8px 16px;
-  border-radius: 5px 0 0 5px;
+  border-radius: 4px 0 0 4px;
   top: 20px;
   right: 0;
 }
@@ -69,7 +70,6 @@
 .bicicleta-conteudo .recursos li {
   display: flex;
   flex-direction: row;
-
   gap: 8px;
 }
 
@@ -116,4 +116,39 @@
   overflow-x: auto;
   border-radius: 3px;
   background-color: var(--cor-c11);
+}
+
+@media (max-width: 800px) {
+  .bicicletas {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+  .bicicleta-item {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .bicicleta-conteudo::before {
+    display: none;
+  }
+
+  .bicicleta-item:nth-child(2) .bicicleta-conteudo {
+    background-color: transparent;
+  }
+
+  .bicicleta-item:nth-child(2)::before {
+    left: -20px;
+    width: 97vw;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .bicicleta-conteudo .recursos {
+    margin-bottom: 32px;
+  }
+
+  .bicicleta-conteudo .botao {
+    display: block;
+    position: relative;
+  }
 }
