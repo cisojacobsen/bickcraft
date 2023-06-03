@@ -66,6 +66,13 @@
   line-height: 1.35; /* 16px */
 }
 
+.font-2-xl {
+  font-family: "Roboto Regular", sans-serif;
+  font-weight: 600;
+  font-size: 2rem; /* 32px */
+  line-height: 1.25; /* 40px */
+}
+
 .font-2-l {
   font-family: "Roboto Regular", sans-serif;
   font-weight: 400;

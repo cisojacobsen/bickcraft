@@ -53,6 +53,15 @@
   margin-left: 20px;
 }
 
+/* Página Bicicleta */
+#bicicleta .bicicletas-lista {
+  padding: 120px 0 120px;
+}
+
+#bicicleta .bicicletas-lista ul {
+  padding: 0;
+}
+
 @media (max-width: 800px) {
   .bicicletas-lista {
     padding: 60px 0 60px;
